@@ -6,10 +6,27 @@ const navLinks = document.querySelectorAll(".nav-link");
 const revealItems = document.querySelectorAll("[data-reveal]");
 const sections = document.querySelectorAll("main section[id], header[id]");
 const yearTarget = document.querySelector("#year");
+const portraitCards = document.querySelectorAll(".portrait-card[data-image]");
 
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
 }
+
+portraitCards.forEach((card) => {
+  const imagePath = card.dataset.image;
+
+  if (!imagePath) {
+    return;
+  }
+
+  const testImage = new Image();
+
+  testImage.addEventListener("load", () => {
+    card.classList.add("has-real-image");
+  });
+
+  testImage.src = imagePath;
+});
 
 const syncHeaderState = () => {
   if (!header) {
