@@ -17,11 +17,12 @@ Sitio web estático de una sola página para GRUPO LEX, firma legal en Honduras 
 - Teléfono / WhatsApp: `+504 9891-8261`
 - Correo: `grupolex504@gmail.com`
 - Ubicación: `Honduras`
+- Sitio publicado: `https://grupo-lex-choluteca.netlify.app/`
 
 ## Personalización rápida
 
 1. Reemplace los datos pendientes en `index.html`:
-   - Dominio final en `og:url` y JSON-LD `url`
+   - Dominio final si se cambia desde Netlify a un dominio propio
    - Dirección física cuando esté disponible
    - Horario exacto cuando esté disponible
    - Enlaces sociales reales
@@ -72,5 +73,5 @@ Netlify desplegará automáticamente cada vez que se haga `git push` a la rama `
 - Confirmar si la ubicación debe mostrarse como Honduras o una ciudad específica.
 - Confirmar horarios de atención.
 - Subir fotografía profesional de la Abg. Thania G. Jirón o del equipo.
-- Definir el dominio final y actualizar `og:url`.
+- Si se compra un dominio propio, actualizar `og:url`, `og:image` y JSON-LD.
 - Renombrar el proyecto/repositorio si se desea que coincida con `GRUPO LEX`.
