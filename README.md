@@ -25,14 +25,14 @@ Sitio web estático de una sola página para GRUPO LEX, firma legal en Honduras 
    - Dirección física cuando esté disponible
    - Horario exacto cuando esté disponible
    - Enlaces sociales reales
-2. Coloque las fotos reales en:
-   - `assets/grupo-lex-hero.jpg`
+2. Mantenga o reemplace los activos visuales en:
+   - `assets/grupo-lex-logo.png`
    - `assets/thania-jiron.jpg`
 3. Actualice la imagen social:
    - `og:image`
    - JSON-LD `image`
 
-Si las imágenes todavía no existen, el diseño mostrará placeholders elegantes con el monograma de GRUPO LEX y de Thania G. Jirón.
+El logo de GRUPO LEX ya está incluido. Si la foto de Thania todavía no existe, el diseño mostrará un placeholder elegante con su monograma.
 
 ## Vista previa local
 

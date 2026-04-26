@@ -13,7 +13,7 @@
   <!-- Reemplazar con el dominio final del sitio -->
   <meta property="og:url" content="https://example.com/">
   <!-- Reemplazar con la imagen final para compartir en Facebook y WhatsApp -->
-  <meta property="og:image" content="https://example.com/assets/grupo-lex-hero.jpg">
+  <meta property="og:image" content="https://example.com/assets/grupo-lex-logo.png">
   <meta property="og:image:alt" content="Imagen profesional de GRUPO LEX Firma Legal">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
       "@context": "https://schema.org",
       "@type": "LegalService",
       "name": "GRUPO LEX",
-      "image": "https://example.com/assets/grupo-lex-hero.jpg",
+      "image": "https://example.com/assets/grupo-lex-logo.png",
       "url": "https://example.com/",
       "description": "Firma legal en Honduras con asesorías y consultorías en derecho laboral, empresarial, corporativo, penal, mercantil, registral, notarial, civil, familiar, agrario, administrativo y sucesorio.",
       "telephone": "+504 9891-8261",
@@ -59,8 +59,13 @@
   <header class="site-header" id="inicio">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Ir al inicio de GRUPO LEX">
-        <span class="brand__name">GRUPO LEX</span>
-        <span class="brand__subtitle">Firma Legal</span>
+        <span class="brand__mark" aria-hidden="true">
+          <img src="assets/grupo-lex-logo.png" alt="">
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">GRUPO LEX</span>
+          <span class="brand__subtitle">Firma Legal</span>
+        </span>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú de navegación">
@@ -104,15 +109,12 @@
 
         <div class="hero-media" data-reveal>
           <div class="portrait-stack">
-            <!-- Reemplazar con la imagen real en assets/grupo-lex-hero.jpg -->
-            <div class="portrait-card portrait-card--hero" role="img" aria-label="Imagen profesional de GRUPO LEX Firma Legal" data-image="assets/grupo-lex-hero.jpg" style="--portrait-image: url('assets/grupo-lex-hero.jpg');">
+            <!-- Reemplazar o actualizar este archivo si el cliente entrega un logo final -->
+            <div class="portrait-card portrait-card--hero portrait-card--logo" role="img" aria-label="Logotipo de GRUPO LEX Firma Legal">
               <div class="portrait-card__badge">Honduras</div>
-              <div class="portrait-card__mockup" aria-hidden="true">
-                <span class="portrait-card__crest">GL</span>
-                <span class="portrait-card__name">GRUPO LEX</span>
-                <span class="portrait-card__role">Firma Legal</span>
+              <div class="portrait-card__logo-showcase">
+                <img src="assets/grupo-lex-logo.png" alt="Logotipo de GRUPO LEX Firma Legal">
               </div>
-              <div class="portrait-card__note">Espacio para fotografía profesional de la firma o retrato de la Abg. Thania G. Jirón.</div>
             </div>
 
             <aside class="floating-panel" aria-label="Contacto principal de la firma">
@@ -329,8 +331,15 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <span class="brand__name">GRUPO LEX</span>
-        <span class="brand__subtitle">Firma Legal</span>
+        <span class="footer-brand__top">
+          <span class="brand__mark" aria-hidden="true">
+            <img src="assets/grupo-lex-logo.png" alt="">
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">GRUPO LEX</span>
+            <span class="brand__subtitle">Firma Legal</span>
+          </span>
+        </span>
         <p>Asesoría legal y consultoría profesional con compromiso, ética y claridad en Honduras.</p>
       </div>
 

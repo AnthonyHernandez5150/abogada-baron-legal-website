@@ -196,11 +196,48 @@ select {
   gap: 1rem;
 }
 
-.brand,
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
 .footer-brand {
   display: inline-flex;
   flex-direction: column;
   gap: 0.15rem;
+}
+
+.footer-brand__top,
+.brand__text {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.footer-brand__top {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.brand__mark {
+  width: clamp(3.1rem, 9vw, 4rem);
+  height: clamp(3.1rem, 9vw, 4rem);
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(200, 166, 106, 0.32);
+  border-radius: 18px;
+  background: var(--color-navy-900);
+  box-shadow: 0 14px 30px rgba(10, 24, 39, 0.12);
+}
+
+.brand__mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .brand__name {
@@ -552,6 +589,36 @@ select {
   min-height: clamp(30rem, 64vw, 41rem);
 }
 
+.portrait-card--logo {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 15%, rgba(255, 255, 255, 0.14), transparent 24%),
+    linear-gradient(145deg, #06194a 0%, #071e5d 48%, #06133a 100%);
+}
+
+.portrait-card--logo::after {
+  display: none;
+}
+
+.portrait-card__logo-showcase {
+  position: relative;
+  z-index: 1;
+  width: min(86%, 32rem);
+  padding: clamp(1rem, 3vw, 1.4rem);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
+}
+
+.portrait-card__logo-showcase img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
+}
+
 .portrait-card--about {
   min-height: clamp(24rem, 60vw, 35rem);
 }
@@ -815,6 +882,11 @@ a.contact-item:focus-visible {
 
 .site-footer .brand__name {
   color: var(--color-white);
+}
+
+.site-footer .brand__mark {
+  border-color: rgba(200, 166, 106, 0.45);
+  box-shadow: none;
 }
 
 .site-footer .brand__subtitle,
