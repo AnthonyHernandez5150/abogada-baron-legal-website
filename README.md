@@ -1,65 +1,76 @@
-# Anissa Barón Legal Website
+# GRUPO LEX Legal Website
 
-Sitio web estático de una sola página para una abogada/notaria en Choluteca, Honduras. Está pensado como demo/pitch para un cliente freelance y usa solo `HTML`, `CSS` y `JavaScript`.
+Sitio web estático de una sola página para GRUPO LEX, firma legal en Honduras con atención principal de la Abg. Thania G. Jirón. Está pensado como demo/pitch para un cliente freelance y usa solo `HTML`, `CSS` y `JavaScript`.
 
 ## Archivos
 
 - `index.html`: estructura del sitio, contenido, SEO, Open Graph y JSON-LD.
 - `styles.css`: estilos visuales, responsive layout, navegación móvil y componentes.
-- `script.js`: menú móvil, estado del header, animaciones suaves y año dinámico.
+- `script.js`: menú móvil, estado del header, animaciones suaves, año dinámico y detección de fotos reales.
 - `assets/`: aquí deben colocarse las imágenes finales.
+
+## Datos actuales
+
+- Marca: `GRUPO LEX`
+- Subtítulo: `Firma Legal`
+- Contacto principal: `Abg. Thania G. Jirón`
+- Teléfono / WhatsApp: `+504 9891-8261`
+- Correo: `grupolex504@gmail.com`
+- Ubicación: `Honduras`
 
 ## Personalización rápida
 
-1. Reemplace los textos de contacto en `index.html`:
-   - WhatsApp: `https://wa.me/504XXXXXXXX`
-   - Teléfono: `tel:+504XXXXXXXX`
-   - Correo: `correo@ejemplo.com`
-   - Dirección: `Choluteca, Honduras`
+1. Reemplace los datos pendientes en `index.html`:
+   - Dominio final en `og:url` y JSON-LD `url`
+   - Dirección física cuando esté disponible
+   - Horario exacto cuando esté disponible
+   - Enlaces sociales reales
 2. Coloque las fotos reales en:
-   - `assets/anissa-hero.jpg`
-   - `assets/anissa-about.jpg`
-3. Reemplace los enlaces sociales `#` por los perfiles reales.
-4. Actualice las metas sociales:
-   - `og:url`
+   - `assets/grupo-lex-hero.jpg`
+   - `assets/thania-jiron.jpg`
+3. Actualice la imagen social:
    - `og:image`
-   - JSON-LD `url`, `image`, `telephone`, `email`
+   - JSON-LD `image`
 
-Si las imágenes todavía no existen, el diseño mostrará placeholders elegantes con degradados en su lugar.
+Si las imágenes todavía no existen, el diseño mostrará placeholders elegantes con el monograma de GRUPO LEX y de Thania G. Jirón.
 
 ## Vista previa local
 
 No necesita instalación.
 
-1. Abra la carpeta del proyecto.
-2. Haga doble clic en `index.html`.
+```powershell
+cd C:\Users\mrtig\Desktop\Law-website
+python -m http.server 5500
+```
 
-Opcionalmente puede usar una extensión como Live Server en VS Code para previsualización automática.
+Luego abra:
+
+```text
+http://localhost:5500
+```
+
+Presione `Ctrl + C` para detener el servidor.
 
 ## Despliegue en Netlify
 
-### Opción 1: Drag and drop
+### Conectar repositorio
 
-1. Inicie sesión en Netlify.
-2. Entre a `Sites`.
-3. Arrastre la carpeta del proyecto completa o súbala como nuevo sitio.
-4. Netlify publicará el sitio automáticamente.
-
-### Opción 2: Conectar repositorio
-
-1. Suba este proyecto a GitHub.
+1. Suba o mantenga este proyecto en GitHub.
 2. En Netlify, haga clic en `Add new site`.
 3. Elija `Import an existing project`.
 4. Conecte el repositorio.
 5. Use esta configuración:
    - Build command: dejar vacío
    - Publish directory: `.`
+   - Branch: `main`
 6. Publique el sitio.
+
+Netlify desplegará automáticamente cada vez que se haga `git push` a la rama `main`.
 
 ## Recomendaciones antes de entregar al cliente
 
-- Cambiar todos los `XXXX-XXXX` por datos reales.
-- Subir una fotografía profesional de buena calidad para el hero.
-- Reemplazar el placeholder del mapa por un `iframe` de Google Maps cuando exista la dirección exacta.
+- Confirmar si la ubicación debe mostrarse como Honduras o una ciudad específica.
+- Confirmar horarios de atención.
+- Subir fotografía profesional de la Abg. Thania G. Jirón o del equipo.
 - Definir el dominio final y actualizar `og:url`.
-- Revisar el sitio en móvil y escritorio con los datos reales.
+- Renombrar el proyecto/repositorio si se desea que coincida con `GRUPO LEX`.
